@@ -1,4 +1,5 @@
 #  Global TLS Setting for all functions. If TLS12 isn't suppported you will get an exception when using the -Verbose parameter.
+# Let's try something else
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Ssl3 -bor [Net.SecurityProtocolType]::Ssl2 -bor [Net.SecurityProtocolType]::Tls -bor [Net.SecurityProtocolType]::Tls11 -bor [Net.SecurityProtocolType]::Tls12
 
 function AmsiBypass
